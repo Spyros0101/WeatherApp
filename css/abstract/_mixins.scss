@@ -1,0 +1,23 @@
+@mixin flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@mixin backgroundImage {
+  background-image: url(../images/bg/pexels-brett-sayles-1431822.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+@mixin div-styles {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

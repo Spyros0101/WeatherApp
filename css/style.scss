@@ -1,0 +1,79 @@
+@import '../css/abstract/mixins';
+@import '../css/base/reset';
+@import '../css/base/colors';
+
+body {
+  @include backgroundImage;
+  @include flex-container;
+  color: $text-color;
+}
+
+.weather-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.search-box {
+  height: 30px;
+}
+
+#searchBtn {
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #8A9489;
+  border-radius: 5px;
+  color: $text-color;
+  font-weight: bold;
+}
+
+#searchBtn:hover {
+  background-color: #6C766B;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.location {
+  @include div-styles;
+}
+
+.section-wrap {
+  @include div-styles;
+}
+
+.iconImg {
+  text-align: center;
+}
+
+.search-box {
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 506px) {
+  .weather-wrap {
+    width: 100%;
+  }
+}
